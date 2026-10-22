@@ -1,0 +1,23 @@
+# ==========================================
+# UV / Environment Blocklist
+# ==========================================
+# Blocks the local virtual environment folder
+.venv/
+venv/
+ENV/
+
+# ==========================================
+# Python Cache & Temporary Files
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ==========================================
+# Operating System Files
+# ==========================================
+.DS_Store
+Thumbs.db
