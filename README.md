@@ -53,6 +53,10 @@ $$
 
 The discrete solution is constructed using continuous, piecewise linear finite element basis functions on a partition of the interval.
 
+## Mathematical Theory
+
+The theoretical background for Part A is available in [`docs/theory_WP1_WP2.md`](docs/theory_WP1_WP2.md). It covers the weak formulation, existence and uniqueness, the Galerkin finite element method, error estimates, and nodal exactness.
+
 ## 4. Computational Workflow
 
 The solver follows a modular computational pipeline:
@@ -97,6 +101,7 @@ FEM1D_PartA/
 │       ├── solution_sin_N16.png
 │       └── solution_poly_exp_N16.png
 ├── docs/
+│   └── theory_WP1_WP2.md
 ├── .gitignore
 ├── pyproject.toml
 ├── uv.lock
@@ -183,7 +188,7 @@ All three solutions satisfy the homogeneous boundary conditions $u(0)=u(1)=0$.
 The convergence study uses the element counts
 
 $$
-N\in{4,8,16,32,64,128,256},
+N\in\{4,8,16,32,64,128,256\},
 $$
 
 where $N$ is the number of elements and $h=1/N$ is the uniform mesh size.
